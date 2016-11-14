@@ -1,0 +1,57 @@
+/* .bg{
+	background: url(../assets/img/fondo.jpg) no-repeat;
+	background-size: cover;
+	overflow:hidden;
+	min-height: 100vh;
+	min-width: 100vw;
+	background-position: center;
+
+} */
+
+.vh{
+	height: 100vh;
+}
+
+.face {
+	width: 80%;
+}
+
+.sign-up{
+	text-decoration: none;
+}
+
+.logo2{
+	width:100%;
+}
+
+.mg-10{
+	margin-top: 10px;
+}
+
+.iconosAbajo{
+	display: inline-block;
+	margin: 0px 15px;
+}
+
+.bottom{
+	margin-top: 10px;
+	bottom: 0;
+	position: absolute;
+	background-color: white;
+	width: 100vw;
+}
+
+.tumb{
+	height:100px;
+	width:100px;
+}
+
+.imgs{
+	position: relative;
+}
+
+#userPic{
+	width:100px;
+	height: 100px;
+	border-radius: 100%;
+}
