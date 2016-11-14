@@ -1,0 +1,27 @@
+{
+  "name": "three-json-s-angels",
+  "version": "1.0.0",
+  "description": "Instagram ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aifos710/three-json-s-angels.git"
+  },
+  "keywords": [
+    "Instagram",
+    "Json"
+  ],
+  "author": "Sofia Caballero, Janet Quispe, Maryori Quiroz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aifos710/three-json-s-angels/issues"
+  },
+  "homepage": "https://github.com/aifos710/three-json-s-angels#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
