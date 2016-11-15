@@ -7,6 +7,16 @@
 	background-position: center;
 
 } */
+.imgShare{
+	height: 60px;
+	width: 60px;
+	border:1px solid #000;
+}
+
+.share{
+	margin-right: 5px;
+	font-size: 20px;
+}
 
 .counts{
 	font-weight: bolder;
