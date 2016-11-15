@@ -92,6 +92,19 @@
 	height: 100px;
 	border-radius: 100%;
 }
+
+.col.s12.pd.fixed{
+	padding: 0;
+}
+
+.s1{
+	min-width: 57px !important;;
+}
+
+.fixed{
+	position: fixed;
+	bottom: 0;
+}
 @media (max-width: 375px ){
 	.pf-sign{
 		font-size: 12px;
