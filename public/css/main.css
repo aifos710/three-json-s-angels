@@ -5,11 +5,44 @@
 	min-height: 100vh;
 	min-width: 100vw;
 	background-position: center;
-
 } 
+
+.imgShare{
+	height: 65px;
+	width: 65px;
+	margin-top: 54%;
+	border:1px solid #000;
+	border-radius: 50%;
+}
+
+.none{
+	display: none;
+}
+
+.post{
+	font-size: 1.3em;
+    padding: 5%;
+}
+
+#mensajes{
+	margin-bottom: 25%;
+}
+
+.imgShare img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.share{
+	margin-right: 5px;
+	font-size: 20px;
+}
+
 .star{
     color: amber;
 }
+
 .lilMenu{
     margin-top: 10px;
 }
@@ -31,6 +64,40 @@
     width: 50px !important ;
     height:50px !important ;
 }
+
+.counts{
+	font-weight: bolder;
+}
+
+.star{
+	color: #ffc107;
+}
+
+.lilMenu{
+	margin-top: 10px;
+}
+
+#imagenPublicada{
+	height: 225px;
+	width: 100%;
+	border:1px solid black;
+	margin-top: 28px;
+}
+
+.bgw{
+	background-color: white;
+	font-size: 18px;
+	color: #000 !important;
+	border:none !important;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.proPic{
+	width: 50px !important ;
+	height:50px !important ;
+}
+
 .vh{
 	height: 100vh;
 }
@@ -105,6 +172,15 @@
 	position: fixed;
 	bottom: 0;
 }
+
+#imagenPublicada a .img{
+    width: 100%;
+    border-radius: 0;
+    float: none;
+    height: 100%;
+    margin: 0;
+}
+
 @media (max-width: 375px ){
 	.pf-sign{
 		font-size: 12px;

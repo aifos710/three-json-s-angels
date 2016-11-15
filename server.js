@@ -11,7 +11,11 @@ app.set("public", __dirname+ "/public");
 
 io.sockets.on("connection", function(socket){
 	socket.on("userimage", function(imagen){
-		io.sockets.emit("addimage", "Image Received", imagen);
+		console.log(imagen);
+		io.sockets.emit("addimage", "", imagen);
+	})
+	socket.broadcast.on("datos", function(datos){
+		io.sockets.emit("nombresSrc", datos);
 	})
 })
 app.get("/", function(req,res){
