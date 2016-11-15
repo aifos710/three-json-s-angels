@@ -1,4 +1,4 @@
-/* .bg{
+ .bg{
 	background: url(../assets/img/fondo.jpg) no-repeat;
 	background-size: cover;
 	overflow:hidden;
@@ -6,12 +6,26 @@
 	min-width: 100vw;
 	background-position: center;
 
-} */
+} 
 
 .vh{
 	height: 100vh;
 }
+.img-instagram{
+	padding: 22% 0 0 0;
+}
+.pf-sign{
+	margin: 0;
+	color: white;
+	text-align: center;
+  font-size: 20px;
 
+}
+.btn-login{
+	background-color: #425F9C;
+	margin: 5% 0 0 0;
+	width: 100%;
+}
 .face {
 	width: 80%;
 }
@@ -54,4 +68,9 @@
 	width:100px;
 	height: 100px;
 	border-radius: 100%;
+}
+@media (max-width: 375px ){
+	.pf-sign{
+		font-size: 12px;
+	}
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Instagram</title>
+    <meta charset="utf-8"/>
+   	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+   	<!-- <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen"/> -->
+   	<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet" />
+   	<link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen"/>
+   	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body class="bg">
+	<div class="mensajes"></div>
+	<input type="text" id="mensaje">
+	<input type="file" id="imagefile">
+	<button type="button" id="enviar" class="Enviar Mensaje align-center">enviar Mensaje</button>
+
+	<form id="create-message" class="well row">
+            <fieldset class="col-lg-8 col-offset-2">
+                <legend>Socket.io Messages</legend>
+                <input type="text" placeholder="Name" id="name" name="name" class="col-lg-12" />
+                <textarea placeholder="Message" id="message" name="message" class="col-lg-12"></textarea>
+                <input type="submit" value="Create Message" class="btn btn-default col-lg-12" />
+            </fieldset>
+        </form>
+
+        <!-- The Messages -->
+        <div class="col-lg-8 col-offset-2 row">
+            <ul id="messages" class="list-group">
+                <!-- Messages go here -->
+            </ul>
+        </div>
+    <script type="text/javascript" src="js/vendor/jquery-2.1.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+   	<script type="text/javascript" src="js/vendor/materialize.min.js"></script>
+   	<script type="text/javascript" src="js/publicar.js"></script>
+</body>
+</html>
+				 
+		
+		
+		
+
+  
