@@ -61,11 +61,12 @@ $(function() {
 
   	var getFacebookData =  function() {
   		FB.api('/me', function(response) {
-  			localStorage.setItem("nombre", response.name);
+  			localStorage.setItem("nombre-unico", response.name);
         localStorage.setItem("src", 'http://graph.facebook.com/'+response.id+'/picture?type=large');
-        $('#facebook-session-img').text("Bienvenido: "+response.name);
-	  		$('#facebook-session').attr('src','http://graph.facebook.com/'+response.id+'/picture?type=large');
-	  		window.location = 'dos.html';
+        console.log(response);
+        
+	  		
+	  		window.location = 'cinco.html';
 	  	});
   	}
 
@@ -110,3 +111,6 @@ $(function() {
   	});
 
 });
+
+$("#nombre").text(localStorage.getItem("nombre-unico"));
+$("#img-local").attr("src",localStorage.getItem("src"));
