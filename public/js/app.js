@@ -8,8 +8,24 @@ $(document).ready(function(){
 	// 
 	$('ul.tabs').tabs();
    
-   /* $('.dropdown-button').dropdown('open');
-    $('.dropdown-button').dropdown('close');*/
+   var count = 0;
+
+	$('#star').click(function(){
+	    var clicked = $(this).data('clicked');
+
+	    if ( clicked ) {
+			count--;
+			$("#star").removeClass("star");
+			$("#counter").html(count +"Likes");
+		    	
+	    }else{
+	       count++;
+			$("#star").addClass("star");
+			$("#counter").html(count +"Likes")
+	    }
+
+	    $(this).data('clicked', !clicked);
+	});
 	
 })
 

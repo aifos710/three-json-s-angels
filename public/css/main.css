@@ -8,6 +8,39 @@
 
 } */
 
+.counts{
+	font-weight: bolder;
+}
+
+.star{
+	color: #ffc107;
+}
+
+.lilMenu{
+	margin-top: 10px;
+}
+
+#imagenPublicada{
+	height: 225px;
+	width: 100%;
+	border:1px solid black;
+	margin-top: 28px;
+}
+
+.bgw{
+	background-color: white;
+	font-size: 18px;
+	color: #000 !important;
+	border:none !important;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.proPic{
+	width: 50px !important ;
+	height:50px !important ;
+}
+
 .vh{
 	height: 100vh;
 }
