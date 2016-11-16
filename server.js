@@ -25,7 +25,7 @@ app.get("/", function(req,res){
 app.set("port",process.env.PORT || 1234);
 
 
-http.listen(app.get("port"),function() {
+app.listen(app.get("port"),function() {
 	console.log("Servidor encendido.");
 });
 
