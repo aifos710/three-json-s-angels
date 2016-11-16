@@ -1,6 +1,5 @@
 // $(document).ready(function(){
 var src;
-var socket= io();
 //  //lenguajes
 $(document).ready(function() {
   $(".imgShare").click(function(){
@@ -28,7 +27,6 @@ $(document).ready(function() {
   $('select').material_select();
   $('ul.tabs').tabs();
   $("#enviar").click(function(e){
-    e.preventDefault();   
     if(src != null){
       var post= $("#textarea1").val();
       socket.emit("userimage", {"src":src,
@@ -38,7 +36,6 @@ $(document).ready(function() {
       });
       var post= $("#textarea1").val("");
       $(this).attr("href", "#test1");
-      $('ul.tabs').tabs('select_tab', 'test1');
     }
   })
   //<div class="lilMenu">
@@ -46,7 +43,7 @@ $(document).ready(function() {
         //<i class="material-icons">chat_bubble_outline</i>
         //<i class="material-icons">call_split</i>
       //</div>
-  
+  var socket= io();
   socket.on("addimage",function(msg, datos){
     $("#mensajes").prepend(
       "<div class='chip bgw'>" +
@@ -177,11 +174,4 @@ $(function() {
         return false;
     });
 
-});
-
-$("#nombre").text(localStorage.getItem("nombre-unico"));
-$("#img-local").attr("src",localStorage.getItem("src"));
-$("#icon-casita").click(function(){
-  $("#datos").remove();
-  $(".mg-10").css("display","block");
 });
