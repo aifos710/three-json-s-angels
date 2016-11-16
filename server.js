@@ -1,34 +1,31 @@
-var express = require('express');
-var app = express();
-var server = require('http').Server(app);
-var io = require('socket.io')(server);
-var messages = [];
-var sockets = [];
+var express= require("express");
+var app= express();
+var http= require("http").Server(app);
+var io= require("socket.io")(http);
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + "/public"));
 
-io.sockets.on("connection", function(socket) {
-	socket.on("user image", function (image) {
-		io.sockets.emit('addimage','Image Received',image);
-	});
+app.set("public", __dirname+ "/public");
 
-	sockets.push(socket);
-	socket.emit('messages-available', messages);
-    socket.on('add-message', function (data) {
-        messages.push(data);
-        sockets.forEach(function (socket) {
-            socket.emit('message-added', data);
-        });
-    });
-});
+//sockets
 
-// app.set('public',__dirname+'/public');
-// app.set('public engine','html');
-
-
-app.get('/',function(req,res){
-	res.render('index');
+io.sockets.on("connection", function(socket){
+	socket.on("userimage", function(imagen){
+		console.log(imagen);
+		io.sockets.emit("addimage", "", imagen);
+	})
+	socket.broadcast.on("datos", function(datos){
+		io.sockets.emit("nombresSrc", datos);
+	})
 })
-server.listen(1234, function() {
-	console.log("El servidor ha iniciado en el puerto 1234");
+app.get("/", function(req,res){
+	res.render("search.html");
+
+})
+app.set("port",process.env.PORT || 1234);
+
+
+http.listen(app.get("port"),function() {
+	console.log("Servidor encendido.");
 });
+
