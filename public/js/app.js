@@ -1,5 +1,6 @@
 // $(document).ready(function(){
 var src;
+var socket= io();
 //  //lenguajes
 $(document).ready(function() {
   $(".imgShare").click(function(){
@@ -45,7 +46,7 @@ $(document).ready(function() {
         //<i class="material-icons">chat_bubble_outline</i>
         //<i class="material-icons">call_split</i>
       //</div>
-  var socket= io();
+  
   socket.on("addimage",function(msg, datos){
     $("#mensajes").prepend(
       "<div class='chip bgw'>" +
